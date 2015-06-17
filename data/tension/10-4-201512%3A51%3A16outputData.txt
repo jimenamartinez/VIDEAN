@@ -1,0 +1,34 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+ Elongation at break =
+
+ +
+      8.3096
+
+Time taken to build model: 0.15 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0     
+Mean absolute error                      4.3745
+Root mean squared error                  7.4078
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               77     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                 -0.2325
+Mean absolute error                      4.4119
+Root mean squared error                  7.4542
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               77     
+

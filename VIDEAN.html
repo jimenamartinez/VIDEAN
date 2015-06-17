@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="javascript/jquery/jquery.js"></script>
+<script src="javascript/sankey/sankey.js"></script>
+<script src="javascript/functions_view1.js"></script>
+<script src="javascript/functions_view2.js"></script>
+<script src="javascript/functions_histogram_scatterplot.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/slidingPanel.css" />
+<link rel="stylesheet" type="text/css" href="css/VIDEAN_View1.css" />
+<link rel="stylesheet" type="text/css" href="css/VIDEAN_View2.css" />
+<link rel="stylesheet" type="text/css" href="css/VIDEAN_View3.css" />
+<style type="text/css"> body { width: 100%; } </style>
+
+<title>Visual & Interactive Descriptor Analysis (VIDEAN)</title>
+<body>
+
+<table align="left" cellspacing="20">
+   <tr> <!-- row 1 main table-->
+      <td rowspan="2" valign="top" > <!-- descriptor list--> <!-- column 1 -->
+         <table align="left" cellspacing="0">
+            <tr>
+               <td><h1 class="view1">Descriptors</h1></td>
+            </tr>
+            <tr>
+               <td><div id = "table_form" style='background-color: #F8F8F8; border: 1px solid #F0F0F0; height:700px; overflow-y: scroll; overflow-x: hidden;'>
+				</div></td>
+            </tr>
+         </table>
+      </td>
+	  
+      <td valign="top" > <!-- molecular descriptors and their correlations--> <!-- column 2 -->
+         <table class="tableGraph1" align="center" cellspacing="0" width="700"  height="150" >
+		    <tr>
+				<td colspan="3"><h1 class="view1">Molecular descriptors and their correlations</h1></td>
+			</tr>
+			
+            <tr> <!-- scale + -->
+               <td> 
+			   <div id= "scalepos">
+				<table id = "scalesCorrelationPositive" style='width=100;table-layout: fixed'>
+				   <tr><b>Correlation-based <br>Scale (+)</b></tr>
+					<tr>
+						<td id="tditem0" class="filaitem0" ondblclick="sevenfiveOne()" onclick="One()"></td>
+						<td>(0.75,1]</td>			
+					</tr>
+					<tr>
+						<td id="tditem1" class="filaitem1" ondblclick="fiveZero()" onclick="One()"></td>
+						<td>(0.50,0.75]</td>
+					</tr>
+					<tr>
+						<td id="tditem2" class="filaitem2" ondblclick="twoFive()" onclick="One()"></td>
+						<td>(0.25,0.50]</td>
+				    </tr>
+					<tr>
+						<td id="tditem3" class="filaitem3" ondblclick="zeroZero()" onclick="One()"></td>
+						<td>(0,0.25]</td>
+					</tr>
+				</table> 		
+               </div>				
+			   </td>
+			   
+               <td> <!-- scale - -->
+			    <div id= "scaleneg">
+				<table id = "scalesCorrelationNegative" style='width=100;table-layout: fixed'>
+					<tr><b><br>Scale (+)</b></tr>
+					<tr>
+						<td id="tditem4" class="filaitem4" ondblclick="negsevenfiveOne()" onclick="One()"></td>
+						<td>[-1,-0.75)</td>
+					</tr>
+					<tr>
+						<td id="tditem5" class="filaitem5" ondblclick="negfiveZero()" onclick="One()"></></td>
+						<td>[-0.75,-0.50)</td>	
+					</tr>
+					<tr>
+						<td id="tditem6" class="filaitem6" ondblclick="negtwoFive()" onclick="One()"></td>
+						<td>[-0.50,-0.25)</td>
+					</tr>
+					<tr>
+						<td id="tditem7" class="filaitem7" ondblclick="negzeroZero()" onclick="One()"></td>
+						<td>[-0.25,0)</td>
+					</tr>
+				  </table>	
+				  </div>
+			   </td>
+			   
+			   <td> <!-- scale entropy -->
+			     <div id= "scale_entropy" style='opacity: 0.2'>		
+					<table style='width=100;table-layout: fixed'>
+					<tr><b>Entropy-based <br>Scale</b></tr>
+					<br />
+					<tr>
+						<td style='width:22px' id="tditem_100MI" class="filaitem_100M" ondblclick="MI_perc100()" onclick="All_MI()"></td>
+						<td style='width:55px' id="tditem_range100MI" onMouseover="Show_Range_100()" onMouseout="Hide_Range_100()">75-100%</td>
+					</tr>
+					<tr>
+						<td id="tditem_75MI" class="filaitem_75M" ondblclick="MI_perc75()" onclick="All_MI()"></></td>
+						<td id="tditem_range75MI" onMouseover="Show_Range_75()" onMouseout="Hide_Range_75()">50-75%</td>
+					</tr>
+					<tr>
+						<td id="tditem_50MI" class="filaitem_50M" ondblclick="MI_perc50()" onclick="All_MI()"></></td>
+						<td id="tditem_range50MI" onMouseover="Show_Range_50()" onMouseout="Hide_Range_50()">25-50%</td>
+					</tr>
+					<tr>
+						<td id="tditem_25MI" class="filaitem_25M" ondblclick="MI_perc_25()" onclick="All_MI()"></></td>
+						<td id="tditem_range25MI" onMouseover="Show_Range_25()" onMouseout="Hide_Range_25()">0-25%</td>
+					</tr>
+				</table>
+			</div> 
+			</td>
+            </tr>
+			
+		    <tr>
+               <td> <!-- thresholds -->
+                <table>
+				   <br />
+					<tr>
+						<td title="Allows filtering by edges value">
+						<b>Edge threshold</b>
+						<input type="range" id="thresh_slider_edgespos_g1" min="0" max="100" step="0.5" value="25">
+						<input id="thresh_value_edgespos_g1" type="number" min="0" max="1" step="any">
+						</td>
+					</tr>
+					<tr>
+						<td title="Allows filtering by nodes size">
+						<b>Node threshold</b>
+						<input type="range" id="thresh_slider_nodes_g1" min="0" max="100" step="0.5" value="25">
+						<input id="thresh_value_nodes_g1" type="number" min="0" step="any">
+						</td>
+					</tr> 
+                </table>				
+			   </td>
+			   
+               <td valign="top"> <!-- modes --> 
+			        <table align="left" cellspacing="0">
+					  <br />
+					  <tr>
+						<td><b>Modes</b></td>
+					  </tr>
+					  <tr>
+						<td>
+						<li>
+						<div id='radio_modes' style='width: 170px;height: 50px;align=middle;text-align:left'>
+						</div>
+						</li>
+						</td>
+					  </tr>
+					</table>
+			   </td>
+			   <td></td>
+            </tr>
+			<tr> <!-- SVG VIEW 1 -->
+				<td colspan="3"><div id="div_view1"><input type=image src="images/sync.jpg" width="25" height="25" onclick="ButtonSyncG1()"></div></td> 
+            </tr>
+         </table>
+      </td>	
+	  
+      <td valign="top" > <!-- descriptors and property --> <!-- column 3 -->
+         <table class="tableGraph2" align="left" cellspacing="0" width="700"  height="150">
+		    <tr>
+				<td><h1 class="view1">Co-occurrence of molecular descriptors</h1></td>
+			</tr>
+			
+            <tr> <!-- co-presence scale -->
+               <td> 
+			   <div id= "copresence">
+			     <table>
+				    <tr><b>Co-ocurrence</b></tr>
+					<tr>
+						<td style='width:22px' id="tditem_high" class="filaitem_high" ondblclick="high()" onclick="All()"></td>
+						<td style='width:55px'>70-100%</td>					
+					</tr>
+					<tr>
+						<td id="tditem_med" class="filaitem_med" ondblclick="medium()" onclick="All()"></td>
+						<td>30-70%</td>
+					</tr>
+					<tr>
+						<td id="tditem_low" class="filaitem_low" ondblclick="low()" onclick="All()"></td>
+						<td>0-30%</td>
+					</tr>
+					<tr><td><br /><br /></td></tr>
+				</table>				
+               </div>				
+			   </td>
+			   			   
+            </tr>
+			
+		    <tr>
+               <td> <!-- thresholds -->
+                <table>
+				   <br />
+					<tr>
+						<td title="Allows filtering by edges value">
+						<b>Edge threshold</b>
+						<input type="range" id="thresh_slider_edges_g2" min="0" max="100" step="1" value="25">
+						<input id="thresh_value_edges_g2" type="number" min="0" step="any">
+						</td>
+					</tr>
+					<tr>
+						<td title="Allows filtering by nodes size">
+						<b>Node threshold</b>
+						<input type="range" id="thresh_slider_nodes_g2" min="0" max="100" step="0.5" value="25">
+						<input id="thresh_value_nodes_g2" type="number" min="0" step="any">
+						</td>
+						</tr> 
+                </table>				
+			   </td>
+			   
+            </tr>
+						
+			<tr> <!-- SVG VIEW 2 -->
+				<td><div id="div_view2"><input type=image src="images/sync.jpg" width="25" height="25" onclick="ButtonSyncG2()"></div></td> 
+            </tr>
+         </table>
+      </td>	
+	  
+   </tr>
+   
+   <tr> <!-- row 2 main table-->
+      <td valign="top" > <!-- models and descriptors -->
+         <table class="tableBipartiteGraph" align="left" cellspacing="0" width="700"  height="150">
+            <tr> <!-- row 1 -->
+               <td><h1 class="view1">Models and Descriptors</h1></td>
+            </tr>
+            <tr> <!-- SVG VIEW 3--> <!-- row 2 -->
+               <td> <div id="div_view3"></td>
+            </tr>
+         </table>
+      </td>
+      <td valign="top" > <!-- histograms and scatterplot-->
+         <table class="tableHistogramsScatterplot" align="left" cellspacing="0" width="700" height="50">
+            <tr>
+               <td valign="top"><h1 class="view1">Histograms/Scatterplot</h1></td>
+            </tr>
+            <tr>
+               <td valign="top">
+			    <table>
+				 <tr >
+					<td>
+						<b>Histogram options</b>
+						<div id='radio_b'></div>
+					</td>
+				</tr> 		
+				</table>
+			   </td>
+            </tr>
+			<tr>
+               <td><div id="div_hist_scatt"><svg id="svg_hist_scatt"></svg></div></td>
+            </tr>
+         </table>			 
+      </td>	 
+   </tr>	 
+</table>
+
+<!-- PREDICTION MODELS -->
+<a class="trigger" href = "#" id="open_pred_models">Evaluate subsets</a>
+<div id="div_prediction_models" class='panel'>
+  <table>
+	<tr>
+	<td valign="top" align="left">
+	<table class="table_prediction" width="330px"cellspacing="0">
+	<tr><td><h3>Prediction</h3><br></td></tr>
+	<tr>
+	<td>
+		<select id="select_option" onChange="handleSelection_Prediction(value)">
+		<option value="noForm"selected>Select the prediction method</option>
+		<option value="formLR">Linear Regression</option>
+		<option value="formDT">Decision Trees (M5P)</option>
+		<option value="formNN">Neural Network (Multilayer Perceptron)</option>
+		</select>
+		<br />
+		<br />
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<form class="forms" id="formLR">
+			<table class="table_LR" width="310px">
+				<tr>
+					<td style="width: 150px;">Attribute selection method</td>
+					<td width="155px" title="Method used to select attributes for use in linear regression">
+						<select id="select_method_LR">
+							<option value="No_AT">No attribute selection</option>
+							<option value="M5" selected>M5 method</option>
+							<option value="Greedy">Greedy method</option>
+						</select>
+					</td>
+				</tr>
+					<td>Ridge</td>
+					<td title="Numeric value for the Ridge parameter"><input id="ridge_LR" type="text" maxlength="6" size="6" value="1.0E-8"></input></td>
+				</tr>
+				<tr>
+				    <td>Eliminate colinear attributes</td>
+					<td title="Eliminate colinear attributes"><input id="elimColAtt_LR" type="checkbox" checked/></td>
+				</tr>
+			</table>
+	</form>
+
+	<form class="forms" id="formDT">
+			<table class="table_DT" width="100%">
+				<tr>
+				<td title="The minimum number of instances to allow at a leaf node">Minimum number of instances</td>
+				<td><input id="minNumbInst_DT" type="text" maxlength="6" size="6" value="4.0"></input></td>
+				</tr>
+				<tr>
+				    <td>Build regression tree</td>
+					<td title="Whether to generate a regression tree/rule instead of a model tree/rule"><input id="buildRT_DT" type="checkbox"/><br />
+				</tr>
+				<tr>
+				    <td>Use unsmoothed</td>
+					<td title="Whether to use unsmoothed predictions"><input id="useUnsmoothed_DT" type="checkbox"/><br />
+				</tr>
+				<tr>
+				    <td>Unpruned</td>
+					<td title="Whether unpruned tree/rules are to be generated"><input id="unpruned_DT" type="checkbox"/></td>
+				</tr>
+
+			</table>
+	</form>
+	<form class="forms" id="formNN">
+			 <table class="table_NN" width="100%">
+			   <tr>
+				<td>Learning Rate </td>
+				<td title="The amount the weights are updated"><input id="learningRate_NN" type="text" maxlength="4" size="4" value="0.3"></input></td>
+				<td>Nominal to binary filter</td>
+				<td title="This will preprocess the instances with the filter"><input id="nomTobinFilt_NN" type="checkbox" checked/></input></td>
+			   </tr>
+			   <tr>
+				<td>Momentum </td>
+				<td title="Momentum applied to the weights during updating"><input id="momentum_NN" type="text" maxlength="4" size="4" value="0.2"></input></td>
+				<td>Normalize attributes</td>
+				<td title="This will normalize the attributes"><input id="normAtt_NN" type="checkbox" checked/></td>
+			  </tr>
+			  <tr>
+				<td>Training time </td>
+				<td title="The number of epochs to train through"><input id="trainingTime_NN" type="text" maxlength="4" size="4" value="500"></input></td>
+				<td>Normalize numeric class</td>
+				<td title="This will normalize the class if it's numeric"><input id="normNumClass_NN" type="checkbox" checked/><br /></td>
+			  </tr>
+			  <tr>
+				<td>Seed </td>
+				<td title="Seed used to initialise the random number generator"><input id="seed_NN" type="text" maxlength="4" size="4" value="0"></input></td>
+				<td>Reset</td>
+				<td title="This will allow the network to reset with a lower learning rate"><input id="reset_NN" type="checkbox" checked/><br /></td>
+			  </tr>
+			  <tr>
+				<td>Validation threshold </td>
+				<td title="Used to terminate validation testing"><input id="validThesh_NN" type="text" maxlength="4" size="4" value="20"></input></td>
+				<td>Decay</td>
+				<td title="This will cause the learning rate to decrease"><input id="decay_NN" type="checkbox"/><br /></td>
+			  </tr>
+			  <tr>
+				<td>Hidden layers </td>
+				<td title="This defines the hidden layers of the neural network.To have no hidden layers put a single 0 here. 
+				This will only be used if autobuild is set. There are also wildcard values 'a' = (attribs + classes) / 2, 'i' = attribs, 
+				'o' = classes , 't' = attribs + classes "><input id="hiddLay_NN" type="text" maxlength="4" size="4" value="a"></input></td>
+				<td>Validation set size</td>
+				<td title="The percentage size of the validation set.If This is set to zero no validation set will be 
+				used and instead the network will train for the specified number of epochs.">
+				<input id="validSetSize_NN" type="text" maxlength="4" size="4" value="0"></input></td>
+			  </tr>
+			</table>
+	</form>
+
+			<table class="table_test" cellspacing="0">
+			<tr><td><h3>Test Options</h3><br></td></tr>
+			 <tr>
+				<td><form class="form_test" id="test_opt" style="width:300px">
+				<table width="100%">
+					<tr>
+						<td class="table_test_opt"><input id="crossVal"type="radio" name="TestO" checked onChange="handleSelection_Folds(value)" style="font-size:9px">Cross-validation</td>
+						<td class="table_test_opt" title="Number of folds"><table><tr><td valign="middle" class="table_folds" style="width: 30px;">Folds</td><td><input id="folds_TO" type="text" maxlength="2" size="2" value="10"></input></td> </tr></table> </td>
+					</tr>
+					<tr>
+						<td class="table_test_opt"><input id="percentSplit"type="radio" name="TestO" onChange="handleSelection_Percentage(value)">Percentage split </td>
+						<td class="table_test_opt" title="Percentage of split"> <table><tr><td valign="middle" class="table_perc" style="width: 30px">%</td><td><input id="percent_TO" type="text" maxlength="2" size="2" value="66" disabled="true"></input></td> </tr></table></td>
+					</tr>
+				</table>
+				</form></td>
+			 </tr>
+			 <tr>
+				<td><button id="butt_run" type="button_r" disabled="true" onClick="Run_Prediction()">RUN</button></td>
+			 </tr>
+			</table>
+
+			</td>
+		</tr>
+		</table>
+	</td>
+
+		<td valign="top"> <table class="table_output_pred" cellspacing="0"><tr><td valign="top"><h3>OUTPUT <br /><br /></h3><textarea id="results_prediction" cols="55" rows="31" readonly="readonly"></textarea></td></tr></table></td>
+	</tr>
+  </table>
+</div>
+
+<script src="javascript/slidingPanel.js"></script>
+<script src="javascript/VIDEAN_View1.js"></script>
+<script src="javascript/VIDEAN_View2.js"></script>
+<script src="javascript/VIDEAN_View3.js"></script>
+</body>
+</html>

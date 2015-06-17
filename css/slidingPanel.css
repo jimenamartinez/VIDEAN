@@ -1,0 +1,96 @@
+.panel h3 {
+font-size:12px;
+font-family:verdana, helvetica, arial, sans-serif;
+letter-spacing:-1px;
+color:#fff;
+font-weight: 700;
+text-transform:uppercase;
+margin:0;
+padding:3px 0 3px 0;
+}
+
+.panel form{
+	color: white;
+}
+
+.panel {
+position: fixed;
+top: 42px;
+right: 0;
+display: none;
+background: #000000;
+border:1px solid #111111;
+-moz-border-radius-topleft: 20px;
+-webkit-border-top-left-radius: 20px;
+-moz-border-radius-bottomleft: 20px;
+-webkit-border-bottom-left-radius: 20px;
+width: 680px;
+height: auto;
+padding: 20px 120px 20px 20px;
+filter: alpha(opacity=95);
+opacity: .95;
+overflow-y: auto; 
+overflow-x: hidden;
+}
+
+a.trigger{
+position: fixed;
+text-decoration: none;
+top: 3px; right: 0;
+font-size: 12px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 10px 40px 10px 15px;
+font-weight: 700;
+background:#333333 url(../images/plus.png) 95% 55% no-repeat;
+border:1px solid #444444;
+-moz-border-radius-topleft: 20px;
+-webkit-border-top-left-radius: 20px;
+-moz-border-radius-bottomleft: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-bottomright: 0px;
+-webkit-border-bottom-right-radius: 0px;
+display: block;
+}
+
+a.trigger:hover{
+position: fixed;
+text-decoration: none;
+top: 3px; right: 0;
+font-size: 12px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 10px 40px 10px 20px;
+font-weight: 700;
+background:#222222 url(../images/plus.png) 95% 55% no-repeat;
+border:1px solid #444444;
+-moz-border-radius-topleft: 20px;
+-webkit-border-top-left-radius: 20px;
+-moz-border-radius-bottomleft: 20px;
+-webkit-border-bottom-left-radius: 20px;
+-moz-border-radius-bottomright: 0px;
+-webkit-border-bottom-right-radius: 0px;
+display: block;
+}
+
+a.active.trigger {
+background:#222222 url(../images/minus.png) 95% 55% no-repeat;
+}
+
+.table_prediction, .table_output_pred{
+	border-color: white;
+	border-style: solid;
+	border-width:1px;
+	border-radius: 5px
+}
+td,tr{
+    text-align: left;
+    vertical-align: top;  
+}
+td.table_folds,td.table_per{
+	vertical-align: middle; 
+	text-align:right;
+}	
+}

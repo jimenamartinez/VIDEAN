@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="similarity, job description, curriculum vitaes" />
+        <meta name="description" content="This demo application computes and ranks curriculum vitaes based on their similarities with job description." />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="javascript/jquery/jquery.js"></script>
+		<script type="text/javascript" src="javascript/loadExamples.js"></script>
+
+        <title>Visual & Interactive Descriptor Analysis (VIDEAN)</title>
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        
+		<div align="center" style='padding:30px;'>
+		<img src="./images/logo_shadows.jpg" height="75px">
+		<h3 align="center">Visual and Interactive Descriptor Analysis</h3>		
+		</div>
+		<!--div>
+		</div-->
+        <div id="wrapper" class="container">
+
+            <ul class="nav nav-pills" style="padding-top:10px;">
+                <li class="active"><a data-toggle="tab" href="#example1">Example 1</a></li>
+                <li><a data-toggle="tab" href="#example2">Example 2</a></li>
+                <li><a data-toggle="tab" href="#externalData" id="result-tab">External data</a></li>
+            </ul>
+
+            <div class="tab-content">
+
+                <!-- Example 1 -->
+                <div id="example1" class="tab-pane fade in active">
+                    <div class="row">
+                        <h2>Example 1</h2>
+                        <span class="help-block">
+                            This dataset contains 122 volatile organic compounds with their logPliver values. This example has 17 descriptors which were selected as candidates by 4 different models.
+                        </span>
+
+							<div>
+								<input name="Example_1" type="submit" value="Load" onClick="Load_data_logPliver()">
+                            </div>
+
+                    </div>
+                </div>
+
+                <!-- Example2 section -->
+                <div id="example2" class="tab-pane fade">
+                    <div class="row">
+                        <h2>Example 2</h2>
+                        <span class="help-block">
+                            This dataset has 77 high molecular weight polymers jointly with their elongation at break values. This example has 41 descriptors which were selected as candidates by 10 different models.
+                        </span>
+
+                        <div>
+							<input name="Example_2" type="submit" value="Load" onClick="Load_data_elongAtBreak()">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- External data section -->
+                <div id="externalData" class="tab-pane fade">
+                    <div class="row">
+                        <h2>External data</h2>
+                        <span class="help-block">
+                            Use your own dataset to load VIDEAN with!
+                        </span>
+						<br>
+						
+                        <div class="col-md-10" id="job-description-input">
+                            <textarea id="text_path" class="form-control" rows="1" placeholder="Enter URL here."></textarea>
+							<input name="load_data" type="submit" value="Load Data" onClick="Load_data_from_url()">
+                            <span>
+							If you do not know how to format your files, read <a href="./readme.txt">this</a> and download <a href="./preprocessingOfData.zip">this</a>.
+							</span>
+							<svg id="errorMsg" width="800" height="400">
+								<text ></text>
+							</svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- .tab-content -->
+
+            <div id="about" class="row">
+            </div>
+
+        </div><!-- #wrapper -->
+
+        <div class="container footer">
+            <footer>
+                <div class="col-lg-12">
+                    <hr>
+                    <span class="help-block">
+                        VIDEAN 1.0 - December, 2014
+                    </span>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./javascript/vendor/vendor.js"></script>        
+    </body>
+</html>

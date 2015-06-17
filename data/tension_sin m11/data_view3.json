@@ -1,0 +1,462 @@
+{
+	"nodes": [
+		{
+			"name": "TWC",
+			"totalMod": 10,
+			"global": "0",
+			"model": 3
+		},
+		{
+			"name": "X4",
+			"totalMod": 10,
+			"global": "0",
+			"model": 3
+		},
+		{
+			"name": "maxaasC",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Whetm",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nRCOOH",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "maxsF",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Mw/Mn (PDI)",
+			"totalMod": 10,
+			"global": "0",
+			"model": 8
+		},
+		{
+			"name": "maxwHBa",
+			"totalMod": 10,
+			"global": "0",
+			"model": 2
+		},
+		{
+			"name": "TPSA(NO)",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nN",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "nBM/nBT",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "C-008",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "minHaaCH",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nHBAcc2",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "SAMC",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "X4Av",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "JGT",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "mindsssP",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nT6Ring",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "JhetZ",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "JGI5",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "minsNH2",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "maxsssN",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "JGI7",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nHAvin",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nHBDon_Lipinski",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "MDEN-12",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nBT",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Uindex",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "MLOGP",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "minHdsCH",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "M1",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M2",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M3",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M4",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M5",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M6",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M7",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M8",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M9",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M10",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		}
+	],
+	"links": [
+		{
+			"source": 31,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 33,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 36,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 31,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 33,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 36,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 31,
+			"target": 2,
+			"value": 1
+		},
+		{
+			"source": 32,
+			"target": 3,
+			"value": 1
+		},
+		{
+			"source": 32,
+			"target": 4,
+			"value": 1
+		},
+		{
+			"source": 32,
+			"target": 5,
+			"value": 1
+		},
+		{
+			"source": 33,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 34,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 35,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 36,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 37,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 33,
+			"target": 7,
+			"value": 1
+		},
+		{
+			"source": 36,
+			"target": 7,
+			"value": 1
+		},
+		{
+			"source": 34,
+			"target": 8,
+			"value": 1
+		},
+		{
+			"source": 34,
+			"target": 10,
+			"value": 1
+		},
+		{
+			"source": 35,
+			"target": 11,
+			"value": 1
+		},
+		{
+			"source": 35,
+			"target": 12,
+			"value": 1
+		},
+		{
+			"source": 35,
+			"target": 13,
+			"value": 1
+		},
+		{
+			"source": 36,
+			"target": 14,
+			"value": 1
+		},
+		{
+			"source": 37,
+			"target": 15,
+			"value": 1
+		},
+		{
+			"source": 37,
+			"target": 16,
+			"value": 1
+		},
+		{
+			"source": 37,
+			"target": 17,
+			"value": 1
+		},
+		{
+			"source": 37,
+			"target": 18,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 19,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 20,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 21,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 22,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 23,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 24,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 25,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 26,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 27,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 28,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 29,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 30,
+			"value": 1
+		}
+	]
+}

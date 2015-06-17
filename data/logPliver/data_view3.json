@@ -1,0 +1,247 @@
+{
+	"nodes": [
+		{
+			"name": "ALOGP",
+			"totalMod": 4,
+			"global": "0",
+			"model": 4
+		},
+		{
+			"name": "Mor29u",
+			"totalMod": 4,
+			"global": "0",
+			"model": 3
+		},
+		{
+			"name": "AMW",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Se",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Pol",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "X4Av",
+			"totalMod": 4,
+			"global": "0",
+			"model": 2
+		},
+		{
+			"name": "ESpm15x",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "DP06",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "SP15",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "QZZv",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "RDF015v",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "RDF020e",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Mor02v",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Mor31e",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "H6v",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Ui",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "F01[C-C]",
+			"totalMod": 4,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "M1",
+			"totalMod": 4,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M2",
+			"totalMod": 4,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M3",
+			"totalMod": 4,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M4",
+			"totalMod": 4,
+			"global": "0",
+			"model": 0
+		}
+	],
+	"links": [
+		{
+			"source": 17,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 18,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 19,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 20,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 17,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 19,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 20,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 17,
+			"target": 2,
+			"value": 1
+		},
+		{
+			"source": 17,
+			"target": 3,
+			"value": 1
+		},
+		{
+			"source": 17,
+			"target": 4,
+			"value": 1
+		},
+		{
+			"source": 19,
+			"target": 5,
+			"value": 1
+		},
+		{
+			"source": 20,
+			"target": 5,
+			"value": 1
+		},
+		{
+			"source": 19,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 20,
+			"target": 7,
+			"value": 1
+		},
+		{
+			"source": 18,
+			"target": 8,
+			"value": 1
+		},
+		{
+			"source": 20,
+			"target": 9,
+			"value": 1
+		},
+		{
+			"source": 18,
+			"target": 10,
+			"value": 1
+		},
+		{
+			"source": 18,
+			"target": 11,
+			"value": 1
+		},
+		{
+			"source": 20,
+			"target": 12,
+			"value": 1
+		},
+		{
+			"source": 19,
+			"target": 13,
+			"value": 1
+		},
+		{
+			"source": 18,
+			"target": 14,
+			"value": 1
+		},
+		{
+			"source": 19,
+			"target": 15,
+			"value": 1
+		},
+		{
+			"source": 20,
+			"target": 16,
+			"value": 1
+		}
+	]
+}

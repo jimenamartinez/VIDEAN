@@ -1,0 +1,464 @@
+{
+	"nodes": [
+		{
+			"name": "Mw/Mn (PDI)",
+			"totalMod": 11,
+			"global": "0",
+			"model": 6
+		},
+		{
+			"name": "crosshead speed (CHS)",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "RBN/nBM",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nSAMC/nSASC",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "RSC",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "MSC",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Mw",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Sv",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Ms",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "SCBO",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nN",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Xt",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "STN",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "PJI2",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "T(O..S)",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "MWC07",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "piPC04",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "X3",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "IDM",
+			"totalMod": 11,
+			"global": "0",
+			"model": 2
+		},
+		{
+			"name": "SIC2",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "JGI2",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "JGI5",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nR=Cp",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nROH",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "O-060",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Ui",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nBonds2",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nBondsD2",
+			"totalMod": 11,
+			"global": "0",
+			"model": 2
+		},
+		{
+			"name": "nwHBa",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "ETA_BetaP_ns",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "ETA_dBetaP",
+			"totalMod": 11,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "MDEC-33",
+			"totalMod": 11,
+			"global": "0",
+			"model": 2
+		},
+		{
+			"name": "M1",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M2",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M3",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M4",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M5",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M6",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M7",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M8",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M9",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M10",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M11",
+			"totalMod": 11,
+			"global": "0",
+			"model": 0
+		}
+	],
+	"links": [
+		{
+			"source": 37,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 41,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 2,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 3,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 4,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 5,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 7,
+			"value": 1
+		},
+		{
+			"source": 37,
+			"target": 8,
+			"value": 1
+		},
+		{
+			"source": 36,
+			"target": 9,
+			"value": 1
+		},
+		{
+			"source": 35,
+			"target": 10,
+			"value": 1
+		},
+		{
+			"source": 35,
+			"target": 11,
+			"value": 1
+		},
+		{
+			"source": 36,
+			"target": 12,
+			"value": 1
+		},
+		{
+			"source": 32,
+			"target": 13,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 14,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 15,
+			"value": 1
+		},
+		{
+			"source": 41,
+			"target": 16,
+			"value": 1
+		},
+		{
+			"source": 34,
+			"target": 17,
+			"value": 1
+		},
+		{
+			"source": 33,
+			"target": 18,
+			"value": 1
+		},
+		{
+			"source": 37,
+			"target": 18,
+			"value": 1
+		},
+		{
+			"source": 38,
+			"target": 19,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 20,
+			"value": 1
+		},
+		{
+			"source": 40,
+			"target": 21,
+			"value": 1
+		},
+		{
+			"source": 35,
+			"target": 22,
+			"value": 1
+		},
+		{
+			"source": 33,
+			"target": 23,
+			"value": 1
+		},
+		{
+			"source": 34,
+			"target": 24,
+			"value": 1
+		},
+		{
+			"source": 32,
+			"target": 25,
+			"value": 1
+		},
+		{
+			"source": 33,
+			"target": 26,
+			"value": 1
+		},
+		{
+			"source": 34,
+			"target": 27,
+			"value": 1
+		},
+		{
+			"source": 41,
+			"target": 27,
+			"value": 1
+		},
+		{
+			"source": 32,
+			"target": 28,
+			"value": 1
+		},
+		{
+			"source": 36,
+			"target": 29,
+			"value": 1
+		},
+		{
+			"source": 41,
+			"target": 30,
+			"value": 1
+		},
+		{
+			"source": 37,
+			"target": 31,
+			"value": 1
+		},
+		{
+			"source": 39,
+			"target": 31,
+			"value": 1
+		}
+	]
+}

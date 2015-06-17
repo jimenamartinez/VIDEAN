@@ -1,0 +1,17 @@
+.node_view3 rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+.node_view3 text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+.link_view3 {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+.link_view3:hover {
+  stroke-opacity: .5;
+}

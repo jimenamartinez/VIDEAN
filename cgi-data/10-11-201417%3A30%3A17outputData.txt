@@ -1,0 +1,38 @@
+
+Options: -S 0 -R 1.0E-8 
+
+
+Linear Regression Model
+
+ logPliver =
+
+      0.172  * ALOGP +
+     -0.0383 *  SP15 +
+      0.0602 *  RDF015v +
+      0.0336 *  Mor02v +
+     -0.0547 *  F01[C-C] +
+     -0.2233
+
+Time taken to build model: 0.12 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correlation coefficient                  0.7624
+Mean absolute error                      0.1727
+Root mean squared error                  0.2236
+Relative absolute error                 61.8526 %
+Root relative squared error             64.7109 %
+Total Number of Instances              122     
+
+
+
+=== Cross-validation ===
+
+Correlation coefficient                  0.6822
+Mean absolute error                      0.1949
+Root mean squared error                  0.2546
+Relative absolute error                 69.579  %
+Root relative squared error             73.3666 %
+Total Number of Instances              122     
+

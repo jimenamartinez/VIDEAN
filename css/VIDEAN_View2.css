@@ -1,0 +1,88 @@
+path.link {
+  fill: none;
+  stroke-width: 4px;
+}
+
+path.link.high {
+  stroke: #006400;
+}
+
+path.link.mean {
+  stroke: #32CD32;
+}
+
+path.link.low {
+  stroke: #ADFF2F;
+}
+.x.axis line {
+  stroke: #fff;
+  stroke-width: 0.70px;
+}
+
+circle {
+  stroke: #000;
+  stroke-width: 0.70px;
+}
+
+text {
+  fill: #000;
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+h1.view2 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 15px;
+	position:absolute;
+	top: 13px;
+	left: 1000px;
+
+}
+svg#svg_view2{
+		position:absolute;
+		top: 340px;
+		left: 850px;
+}
+svg#div_view2{
+		position:absolute;
+		top: 380px;
+		left: 850px;
+
+	}
+
+h3.view2 {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 12px;
+	position:absolute;
+	top: 60px;
+	left: 900px;
+}
+
+ul
+	{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+	tr
+		{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		position:relative;
+		top: 70px;
+		left: 10px;
+	}
+div
+	{
+	float: left;
+	
+}
+td{
+  width: 20px;
+}
+
+

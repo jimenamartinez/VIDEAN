@@ -1,0 +1,572 @@
+{
+	"nodes": [
+		{
+			"name": "Mn/MW",
+			"totalMod": 10,
+			"global": "0",
+			"model": 10
+		},
+		{
+			"name": "crosshead speed (CHS)",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Mw/Mn (PDI)",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Sp",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nP",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Pol",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "MSD",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "SMTIV",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "RHyDp",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "Wap",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "D/Dr09",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "T(O..P)",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "MWC04",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "RDCHI",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "TIC2",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nCt",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nROH",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "C-004",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "C-005",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "ALOGP2",
+			"totalMod": 10,
+			"global": "0",
+			"model": 2
+		},
+		{
+			"name": "nHBint4",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nHBint9",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nHBint10",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nHdCH2",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nHCsatu",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nHAvin",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nsCH3",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "ndssC",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "ndO",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "SHaaCH",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "minHBa",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "minHBint9",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "maxHBint6",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "maxHAvin",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "ETA_Epsilon_3",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "ETA_dEpsilon_A",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "ETA_dEpsilon_B",
+			"totalMod": 10,
+			"global": "0",
+			"model": 2
+		},
+		{
+			"name": "ETA_EtaP_F_L",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "MDEO-11",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "n6Ring",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "nF6Ring",
+			"totalMod": 10,
+			"global": "0",
+			"model": 1
+		},
+		{
+			"name": "M1",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M2",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M3",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M4",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M5",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M6",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M7",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M8",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M9",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		},
+		{
+			"name": "M10",
+			"totalMod": 10,
+			"global": "0",
+			"model": 0
+		}
+	],
+	"links": [
+		{
+			"source": 41,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 43,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 44,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 45,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 46,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 47,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 48,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 49,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 50,
+			"target": 0,
+			"value": 1
+		},
+		{
+			"source": 48,
+			"target": 1,
+			"value": 1
+		},
+		{
+			"source": 48,
+			"target": 2,
+			"value": 1
+		},
+		{
+			"source": 41,
+			"target": 3,
+			"value": 1
+		},
+		{
+			"source": 46,
+			"target": 4,
+			"value": 1
+		},
+		{
+			"source": 49,
+			"target": 5,
+			"value": 1
+		},
+		{
+			"source": 48,
+			"target": 6,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 7,
+			"value": 1
+		},
+		{
+			"source": 41,
+			"target": 8,
+			"value": 1
+		},
+		{
+			"source": 49,
+			"target": 9,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 10,
+			"value": 1
+		},
+		{
+			"source": 46,
+			"target": 11,
+			"value": 1
+		},
+		{
+			"source": 49,
+			"target": 12,
+			"value": 1
+		},
+		{
+			"source": 44,
+			"target": 13,
+			"value": 1
+		},
+		{
+			"source": 50,
+			"target": 14,
+			"value": 1
+		},
+		{
+			"source": 47,
+			"target": 15,
+			"value": 1
+		},
+		{
+			"source": 45,
+			"target": 16,
+			"value": 1
+		},
+		{
+			"source": 48,
+			"target": 17,
+			"value": 1
+		},
+		{
+			"source": 47,
+			"target": 18,
+			"value": 1
+		},
+		{
+			"source": 44,
+			"target": 19,
+			"value": 1
+		},
+		{
+			"source": 45,
+			"target": 19,
+			"value": 1
+		},
+		{
+			"source": 43,
+			"target": 20,
+			"value": 1
+		},
+		{
+			"source": 47,
+			"target": 21,
+			"value": 1
+		},
+		{
+			"source": 43,
+			"target": 22,
+			"value": 1
+		},
+		{
+			"source": 50,
+			"target": 23,
+			"value": 1
+		},
+		{
+			"source": 45,
+			"target": 24,
+			"value": 1
+		},
+		{
+			"source": 49,
+			"target": 25,
+			"value": 1
+		},
+		{
+			"source": 44,
+			"target": 26,
+			"value": 1
+		},
+		{
+			"source": 48,
+			"target": 27,
+			"value": 1
+		},
+		{
+			"source": 50,
+			"target": 28,
+			"value": 1
+		},
+		{
+			"source": 47,
+			"target": 29,
+			"value": 1
+		},
+		{
+			"source": 46,
+			"target": 30,
+			"value": 1
+		},
+		{
+			"source": 48,
+			"target": 31,
+			"value": 1
+		},
+		{
+			"source": 50,
+			"target": 32,
+			"value": 1
+		},
+		{
+			"source": 49,
+			"target": 33,
+			"value": 1
+		},
+		{
+			"source": 46,
+			"target": 34,
+			"value": 1
+		},
+		{
+			"source": 50,
+			"target": 35,
+			"value": 1
+		},
+		{
+			"source": 43,
+			"target": 36,
+			"value": 1
+		},
+		{
+			"source": 47,
+			"target": 36,
+			"value": 1
+		},
+		{
+			"source": 41,
+			"target": 37,
+			"value": 1
+		},
+		{
+			"source": 42,
+			"target": 38,
+			"value": 1
+		},
+		{
+			"source": 45,
+			"target": 39,
+			"value": 1
+		},
+		{
+			"source": 44,
+			"target": 40,
+			"value": 1
+		}
+	]
+}
