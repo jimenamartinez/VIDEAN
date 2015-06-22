@@ -4,12 +4,12 @@ VIDEAN (Visual and Interactive Descriptor Analysis)
 Main directories and files of the tool
 --------------------------------------
 
-cgi-bin: contains a python script to run external functions of Weka. 
-cgi-data: contains external data files with results of run the python script.
-css : contains the cascading style sheets.
-d3 :  library d3.js (http://d3js.org/).
-data : contains the data files used in the examples.
-javascript : javascript files
+- cgi-bin: contains a python script to run external functions of Weka. 
+- cgi-data: contains external data files with results of run the python script.
+- css : contains the cascading style sheets.
+- d3 :  library d3.js (http://d3js.org/).
+- data : contains the data files used in the examples.
+- javascript : javascript files
     - VIDEAN_View1: load the data for the "Molecular descriptors and their correlations" section.
     - VIDEAN_View2: load the data for the "Co-occurrence of molecular descriptors" section.
 	- VIDEAN_View3: load the data for the "Models and descriptors" section.
