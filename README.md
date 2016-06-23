@@ -1,5 +1,7 @@
 VIDEAN (Visual and Interactive Descriptor Analysis)
 --------------------------------------------------
+Available on: 
+http://lidecc.cs.uns.edu.ar/VIDEAN/
 
 Main directories and files of the tool
 --------------------------------------
@@ -39,4 +41,4 @@ Important:
 Example:
 dataLoadJSON('./input data/selected_descriptors_values.csv','./input data/selected_descriptors_names','./input data/descriptors_names','./input data/property_values.csv','./input data/models.txt','logPliver')
 
-María Jimena Martínez, Ignacio Ponzoni, Mónica F. Díaz, Gustavo E. Vazquez, Axel J. Soto: "Visual Analytics in Cheminformatics: User-Supervised Descriptor Selection for QSAR Methods" Under review.
+María Jimena Martínez, Ignacio Ponzoni, Mónica F. Díaz, Gustavo E. Vazquez, Axel J. Soto: "Visual Analytics in Cheminformatics: User-Supervised Descriptor Selection for QSAR Methods". Journal of Cheminformatics, 7:39, 2015.
